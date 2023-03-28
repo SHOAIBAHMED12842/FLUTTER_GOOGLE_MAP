@@ -21,7 +21,7 @@ class _PolylineScreenState extends State<PolylineScreen> {
   Map<PolylineId, Polyline> polylines = {};
   List<LatLng> polylineCoordinates = [];
   PolylinePoints polylinePoints = PolylinePoints();
-  String googleAPiKey = "AIzaSyCM2ubwc7nWDm9DfBhYFiMhQ5Qcg2pFCWU";
+  String googleAPiKey = "YOUR GOOGLE MAP API KEY";
 
   @override
   void initState() {
