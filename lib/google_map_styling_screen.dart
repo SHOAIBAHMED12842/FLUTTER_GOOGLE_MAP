@@ -89,6 +89,46 @@ class _GoolgeMapStylingState extends State<GoolgeMapStyling> {
                   },
                   value: 2,
                   child: const Text("Night"),
+                ),
+                PopupMenuItem(
+                  onTap: ()async{
+
+                    _controller.future.then((value){
+
+                      DefaultAssetBundle.of(context).loadString('images/Aubergine.json').then((string) {
+                        setState(() {
+
+                        });
+                        value.setMapStyle(string);
+
+                      });
+
+                    }).catchError((error) {
+                      print("error"+error.toString());
+                    });
+                  },
+                  value: 2,
+                  child: const Text("Aubergine"),
+                ),
+                PopupMenuItem(
+                  onTap: ()async{
+
+                    _controller.future.then((value){
+
+                      DefaultAssetBundle.of(context).loadString('images/silver.json').then((string) {
+                        setState(() {
+
+                        });
+                        value.setMapStyle(string);
+
+                      });
+
+                    }).catchError((error) {
+                      print("error"+error.toString());
+                    });
+                  },
+                  value: 2,
+                  child: const Text("silver"),
                 )
               ]
           )
