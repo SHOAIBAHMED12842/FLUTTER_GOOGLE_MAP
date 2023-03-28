@@ -20,7 +20,7 @@ class _GoolgeMapStylingState extends State<GoolgeMapStyling> {
   final Completer<GoogleMapController> _controller = Completer();
 
   static const CameraPosition _kGooglePlex =  CameraPosition(
-    target: LatLng(33.6941, 72.9734),
+    target: LatLng(24.9180271, 67.0970916),
     zoom: 15,
   );
 
