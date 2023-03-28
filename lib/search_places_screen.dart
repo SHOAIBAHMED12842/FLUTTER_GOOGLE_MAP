@@ -36,7 +36,7 @@ class _SearchPlacesScreenState extends State<SearchPlacesScreen> {
   }
 
   void getSuggestion(String input) async {
-    String kGoogleApiKey = 'AIzaSyCM2ubwc7nWDm9DfBhYFiMhQ5Qcg2pFCWU';
+    String kGoogleApiKey = 'YOUR GOOGLE MAP API KEY';
     String baseURL =
         'https://maps.googleapis.com/maps/api/place/autocomplete/json';
     String request =
